@@ -7,23 +7,109 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Movie survey form</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
     </head>
+    <!----------------------------------Title------------------------------->
     <div class="container">
-        <header>
+        <header class="header">
             <h1 id="title">Movie survey form</h1>
-            <p>Thank you for visiting us. By filling out this 2-5 minute survey, you will help us obtain the very best results.</p>
+            <p class="header-p" id="description">Thank you for the time you take to participate in our survey.</p>
         </header>
-        <form class="survey-form">
-            <div>
-
-            </div>
-
-
-
+    <!------------------------------Gereral info---------------------------->    
+        <form id="survey-form" class="survey-form">
+          <div class="name">
+              <label for="name" id="name-label">What is your name?</label>
+              <input type="text" name="name" id="name" placeholder="Enter your name" required class="input-field">
+          </div>
+          <div class="email">
+              <label for="email" id="email-label">What is your e-mail?</label>
+              <input type="email" name="email" id="email" placeholder="Enter your e-mail" required class="input-field">
+          </div>
+          <div class="age">
+              <label for="number" id="number-label">What is your age?</label>
+              <input type="number" name="number" id="number" min="10" max="99" placeholder="Enter your age" required class="input-field">
+          </div>
+    <!-----------------------------------Q1--------------------------------->
+          <div class="shows-freq">
+              <label for="dropdown" id="dropdown-label">How often do you watch television shows?</label>
+              <select name="dropdown" id="dropdown" required class="input-field">
+                  <option disabled selected value>Select one option</option>
+                  <option value="1/day">Every day</option>
+                  <option value="2-3/week">2-3 times per week</option>
+                  <option value="1/week">Once a week</option>
+                  <option value="2-3/month">2-3 times per month</option>
+              </select>
+          </div>
+    <!-----------------------------------Q2--------------------------------->
+          <div class="radio">
+              <p>What is your favourite kind of movie?</p>
+                <label for="drama">
+                <input type="radio" name="genre-movie" id="drama" class="input-radio" value="drama">Drama</label>
+                <label for="Documentary">
+                <input type="radio" name="genre-movie" id="Documentary" class="input-radio" value="documentary">Documentary</label>
+                <label for="musical">
+                <input type="radio" name="genre-movie" id="musical" class="input-radio" value="musical">Musical</label>
+                <label for="horror">
+                <input type="radio" name="genre-movie" id="horror" class="input-radio" value="horror">Horror</label>
+                <label for="action/adventure">
+                <input type="radio" name="genre-movie" id="action/adventure" class="input-radio" value="action/adventure">Action/Adventure</label>
+                <label for="science-fiction">
+                <input type="radio" name="genre-movie" id="science-fiction" class="input-radio" value="science-fiction">Science-Fiction</label>
+                <label for="comedy">
+                <input type="radio" name="genre-movie" id="comedy" class="input-radio" value="comedy">Comedy</label>
+                <label for="romance">
+                <input type="radio" name="genre-movie" id="romance" class="input-radio" value="romance">Romance</label>
+                <label for="thriller">
+                <input type="radio" name="genre-movie" id="thriller" class="input-radio" value="thriller">Thriller</label>
+          </div>
+    <!-----------------------------------Q3--------------------------------->
+          <div class="tv-shows-genre">
+            <p>What is your favourite kind of television show?</p>
+            <label for="drama">
+            <input type="checkbox" name="genre-TV" id="drama" value="drama" class="tv-shows-input">Drama</label>
+            <label for="documentary">
+            <input type="checkbox" name="genre-TV" id="Documentary" value="documentary" class="tv-shows-input">Documentary</label>
+            <label for="musical">
+            <input type="checkbox" name="genre-TV" id="musical" value="musical" class="tv-shows-input">Musical</label>
+            <label for="horror">
+            <input type="checkbox" name="genre-TV" id="horror" value="horror" class="tv-shows-input">Horror</label>
+            <label for="action/adventure">
+            <input type="checkbox" name="genre-TV" id="action/adventure" value="action/adventure" class="tv-shows-input">Action/Adventure</label>
+            <label for="science-fiction">
+            <input type="checkbox" name="genre-TV" id="science-fiction" value="science-fiction" class="tv-shows-input">Action/Adventure</label>
+            <label for="comedy">
+            <input type="checkbox" name="genre-TV" id="comedy" value="comedy" class="tv-shows-input">Comedy</label>
+            <label for="romance">
+            <input type="checkbox" name="genre-TV" id="romance" value="romance" class="tv-shows-input">Romance</label>
+            <label for="thriller">
+            <input type="checkbox" name="genre-TV" id="thriller" value="thriller" class="tv-shows-input">Thriller</label>
+            <label for="talk-shows">
+            <input type="checkbox" name="genre-TV" id="talk-shows" value="talk-shows" class="tv-shows-input">Talk Shows</label>
+            <label for="reality-shows">
+            <input type="checkbox" name="genre-TV" id="reality-shows" value="reality-shows" class="tv-shows-input">Reality Shows</label>
+            <label for="game-shows">
+            <input type="checkbox" name="genre-TV" id="game-shows" value="game-shows" class="tv-shows-input">Game Shows</label> 
+            <label for="cooking-food">
+            <input type="checkbox" name="genre-TV" id="cooking-food" value="cooking-food" class="tv-shows-input">Cooking/Food</label>
+          </div>
+    <!-----------------------------------Q4--------------------------------->
+          <div class="fav-12">
+            <label for="fav-12">What is your favourite movie for the past 12 months?</label>  
+            <textarea cols="20" rows="2" id="fav-12" name="fav-12" class="input-field" placeholder="Enter answer here"></textarea>
+          </div>
+          <div class="fav-all">
+              <label for="fav-all">What is your all time favourite movie?</label>
+              <textarea cols="20" rows="1" id="fav-all" name="fav-all" class="input-field" placeholder="Enter answer here"></textarea>
+          </div>
+    <!------------------------------Submit button--------------------------->
+          <div>
+              <button id="submit" name="submit" class="submit-button" required>Submit</button>
+          </div>
         </form>
     </div>
 </html>

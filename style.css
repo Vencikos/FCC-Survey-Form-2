@@ -1,0 +1,83 @@
+
+
+body {
+    font-family: "Grandstander", monospace;
+    font-size: 1.3rem;
+    background-image: url("https://cdn.hipwallpaper.com/i/71/7/yZSO8C.jpg");
+    background-size: 100% 100%;
+}
+
+.input-field {
+    display: inline-block;
+    font-family: "Grandstander";
+    font-size: 1.3rem;
+    width: 100%;
+    height: 2rem;
+}
+
+.tv-shows-input {
+    padding: 2rem;
+}
+
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+  }
+
+.header {
+    text-align: center;
+    margin: 2rem;
+}
+
+h1, .survey-form, .shows-freq, .radio, .tv-shows-genre, .fav-12, .fav-all, .name, .email, .age {
+    padding: 0.8rem 3rem 0.8rem 3rem;  
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+  
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.survey-form {
+    display: block;
+    margin: auto;
+    background: rgb(216,234,204,0.7);
+    border: 0.1rem solid rgb(216,234,204);
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+    padding: auto;
+    width: 80%;
+}
+
+.submit-button {
+    display: block;
+    font-family: "Grandstander"; 
+    background-color: #FF9E1F;
+    border: 1px solid #FF9E1F;
+    border-radius: 1rem;
+    width: 85%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+label {
+    display: block;   
+}
+
+h1 {
+    font-size: 3rem; 
+}
+
+.header-p {
+    font-size: 1rem;
+}
